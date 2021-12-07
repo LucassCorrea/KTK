@@ -1,0 +1,217 @@
+import 'package:app_gdppi/utils/routes.dart';
+import 'package:flutter/material.dart';
+
+class ListaCriancas extends StatefulWidget {
+  const ListaCriancas({Key? key}) : super(key: key);
+
+  @override
+  _ListaCriancasState createState() => _ListaCriancasState();
+}
+
+class _ListaCriancasState extends State<ListaCriancas> {
+  @override
+  Widget build(BuildContext context) {
+    final mediaQuery = MediaQuery.of(context);
+    return Scaffold(
+      body: Container(
+        width: mediaQuery.size.width, //Vai pegar largura completa
+        height: mediaQuery.size.height, //Vai pegar altura completa
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/img/img2.png"),
+            fit: BoxFit.fill,
+          ),
+        ),
+        child: SingleChildScrollView(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
+                children: [
+                  Padding(
+                    padding:
+                        const EdgeInsets.only(top: 50, right: 20, left: 10),
+                    child: Align(
+                      alignment: Alignment.topLeft,
+                      child: FloatingActionButton(
+                        backgroundColor: const Color(0xFF63C4D7),
+                        child: const Icon(
+                          Icons.arrow_back_ios_new_outlined,
+                          color: Color(0xFF084769),
+                        ),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed(Routes.MENU);
+                        },
+                      ),
+                    ),
+                  ),
+                  const Padding(
+                    padding: EdgeInsets.only(top: 50),
+                    child: Align(
+                      alignment: Alignment.topCenter,
+                      child: Text(
+                        'Lista de Crianças',
+                        style: TextStyle(
+                          color: Color(0xFF084769),
+                          fontWeight: FontWeight.bold,
+                          fontSize: 30,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Container(
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 50, bottom: 25),
+                      child: SizedBox(
+                        width: mediaQuery.size.width * .8,
+                        height: mediaQuery.size.height * .08,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(Routes.REGISTRO_CONCLUIDO);
+                          },
+                          child: const Text(
+                            'Criança João',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15, bottom: 20),
+                      child: SizedBox(
+                        width: mediaQuery.size.width * .8,
+                        height: mediaQuery.size.height * .08,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(Routes.REGISTRO_CONCLUIDO);
+                          },
+                          child: const Text(
+                            'Criança Maria',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15, bottom: 20),
+                      child: SizedBox(
+                        width: mediaQuery.size.width * .8,
+                        height: mediaQuery.size.height * .08,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(Routes.REGISTRO_CONCLUIDO);
+                          },
+                          child: const Text(
+                            'Criança José',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15, bottom: 20),
+                      child: SizedBox(
+                        width: mediaQuery.size.width * .8,
+                        height: mediaQuery.size.height * .08,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(Routes.REGISTRO_CONCLUIDO);
+                          },
+                          child: const Text(
+                            'Criança Francisca',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 15, bottom: 20),
+                      child: SizedBox(
+                        width: mediaQuery.size.width * .8,
+                        height: mediaQuery.size.height * .08,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(Routes.REGISTRO_CONCLUIDO);
+                          },
+                          child: const Text(
+                            'Criança Raimunda',
+                            style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 20, bottom: 10),
+                      child: IconButton(
+                        iconSize: 50,
+                        icon: const Image(
+                          image: AssetImage("assets/icons/LOGO_KTK.png"),
+                        ),
+                        onPressed: () {},
+                      ),
+                    ),
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}

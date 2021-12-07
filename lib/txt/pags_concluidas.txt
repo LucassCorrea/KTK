@@ -1,0 +1,24 @@
+inicio.dart
+tela_login.dart
+rec_senha.dart //pop-up
+rec_senha.dart
+tela_cadastro.dart
+cadastrado.dart //pop-up
+menu.dart
+add_crianca.dart
+registro_concluído.dart //pop-up
+lista_criancas.dart
+inf_criancas.dart
+listas_de_testes.dart //tests
+comecar.dart //pop-up
+teste_equil.dart //tests
+teste_mono.dart //tests
+teste_lat.dart //tests
+teste_transf //tests
+calculando.dart //pop-up
+resultado_bom.dart //results
+resultado.dart //components
+historico.dart
+his_criancas.dart
+his_datas.dart
+his_pontuacao.dart

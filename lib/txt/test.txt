@@ -1,0 +1,22 @@
+final _testes = const [
+    {
+      'texto':
+          'Andar para trás ao longo de uma trave de equilibrio de largura decrescente de 6,0, 4,5 e 3,0 cm',
+      'titulo': 'Equilibrio na trave',
+    },
+    {
+      'texto':
+          'Saltar com uma perna sobre um obstáculo de espuma com altura crescente de 5 centímetros',
+      'titulo': 'Saltos Monopedais',
+    },
+    {
+      'texto':
+          'Saltar o máximo de vezes possíveis de um lado para o outro por 15 segundos',
+      'titulo': 'Saltos Laterais',
+    },
+    {
+      'texto':
+          'Andar para trás ao longo de uma trave de equilíbrio de largura decrescente de 6,0, 4,5 e 3,0 cm',
+      'titulo': 'Transferências Laterais',
+    },
+  ];
