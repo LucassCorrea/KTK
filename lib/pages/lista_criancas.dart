@@ -25,12 +25,7 @@ class _ListaCriancasState extends State<ListaCriancas> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(height: mediaQuery.size.height * .02),
-          Row(
-            children: [
-              SizedBox(width: mediaQuery.size.width * .03),
-              const ButtomBack(rota: Routes.MENU),
-            ],
-          ),
+          const ButtomBack(rota: Routes.MENU),
           SizedBox(height: mediaQuery.size.height * .02),
           Align(
             alignment: Alignment.center,
