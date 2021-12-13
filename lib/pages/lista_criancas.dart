@@ -1,6 +1,7 @@
 import 'package:app_gdppi/components/background.dart';
 import 'package:app_gdppi/components/buttom_back.dart';
 import 'package:app_gdppi/components/buttom_kids.dart';
+import 'package:app_gdppi/components/title.dart';
 import 'package:app_gdppi/model/children.dart';
 import 'package:app_gdppi/model/children_data.dart';
 import 'package:app_gdppi/utils/routes.dart';
@@ -24,12 +25,9 @@ class _ListaCriancasState extends State<ListaCriancas> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(height: mediaQuery.size.height * .02),
-          const ButtomBack(rota: Routes.MENU),
-          SizedBox(height: mediaQuery.size.height * .02),
-          Align(
-            alignment: Alignment.center,
-            child: Text(
+          TitleBar(
+            buttom: const ButtomBack(rota: Routes.MENU),
+            text: Text(
               'Lista de Crianças',
               style: TextStyle(
                 color: const Color(0xFF084769),

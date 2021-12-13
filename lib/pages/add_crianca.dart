@@ -33,111 +33,117 @@ class _AddCriancaState extends State<AddCrianca> {
               rota: Routes.MENU,
             ),
           ),
-          SizedBox(height: mediaQuery.size.height * .02),
+          SizedBox(height: mediaQuery.size.height * .03),
           SizedBox(
-            height: mediaQuery.size.height * 4,
+            height: mediaQuery.size.height * .60,
+            width: mediaQuery.size.width * .8,
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  SizedBox(
-                    width: mediaQuery.size.width * .8,
-                    child: Form(
-                      child: Column(
-                        children: [
-                          const Padding(
-                            padding: EdgeInsets.all(8.0),
-                            child: CircleAvatar(
-                              backgroundColor: Color(0xFF63C4D7),
-                              child: Icon(
-                                Icons.add_photo_alternate,
-                                color: Color(0xFF084769),
-                                size: 75,
-                              ),
-                              radius: 50,
+                  Form(
+                    child: Column(
+                      children: [
+                        const Padding(
+                          padding: EdgeInsets.all(8.0),
+                          child: CircleAvatar(
+                            backgroundColor: Color(0xFF63C4D7),
+                            child: Icon(
+                              Icons.add_photo_alternate,
+                              color: Color(0xFF084769),
+                              size: 75,
                             ),
+                            radius: 50,
                           ),
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              labelText: 'Nome Completo',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(16),
-                                ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            labelText: 'Nome Completo',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(16),
                               ),
                             ),
                           ),
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              labelText: 'Data de Nascimento',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(16),
-                                ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            labelText: 'Data de Nascimento',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(16),
                               ),
                             ),
                           ),
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              labelText: 'Nome do Resposável',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(16),
-                                ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            labelText: 'Nome do Resposável',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(16),
                               ),
                             ),
                           ),
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              labelText: 'Endereço',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(16),
-                                ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            labelText: 'Endereço',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(16),
                               ),
                             ),
                           ),
-                          TextFormField(
-                            decoration: const InputDecoration(
-                              labelText: 'Celular',
-                              prefixText: '+55',
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.all(
-                                  Radius.circular(16),
-                                ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                        TextFormField(
+                          decoration: const InputDecoration(
+                            labelText: 'Celular',
+                            prefixText: '+55',
+                            border: OutlineInputBorder(
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(16),
                               ),
                             ),
                           ),
-                          ElevatedButton(
-                            onPressed: () {
-                              Navigator.of(
-                                context,
-                              ).pushNamed(Routes.REGISTRO_CONCLUIDO);
-                            },
-                            child: Text(
-                              'Finalizar',
-                              style: TextStyle(
-                                fontSize: 15 * mediaQuery.textScaleFactor,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(16),
-                              ),
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 30,
-                                vertical: 8,
-                              ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                        ElevatedButton(
+                          onPressed: () {
+                            Navigator.of(
+                              context,
+                            ).pushNamed(Routes.REGISTRO_CONCLUIDO);
+                          },
+                          child: Text(
+                            'Finalizar',
+                            style: TextStyle(
+                              fontSize: 15 * mediaQuery.textScaleFactor,
+                              fontWeight: FontWeight.bold,
                             ),
                           ),
-                        ],
-                      ),
+                          style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 30,
+                              vertical: 20,
+                            ),
+                          ),
+                        ),
+                        SizedBox(height: mediaQuery.size.height * .02),
+                      ],
                     ),
                   ),
                 ],
               ),
             ),
           ),
+          SizedBox(height: mediaQuery.size.height * .03),
           IconButton(
             iconSize: 50,
             icon: const Image(

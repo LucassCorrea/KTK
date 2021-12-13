@@ -10,9 +10,6 @@ class TitleBar extends StatelessWidget {
     final mediaQuery = MediaQuery.of(context);
     return Column(
       children: [
-        SizedBox(
-          height: mediaQuery.size.height * .05,
-        ),
         buttom, //incluir o botão voltar
         Align(
           alignment: Alignment.center,
