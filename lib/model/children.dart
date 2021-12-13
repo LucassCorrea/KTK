@@ -1,8 +1,11 @@
-class Children {
+import 'package:flutter/material.dart';
+
+class Children with ChangeNotifier {
   String _id;
   String _name;
   String _date;
   String _responsible;
+  String _adress;
   String _contate;
 
   Children(
@@ -10,6 +13,7 @@ class Children {
     this._name,
     this._date,
     this._responsible,
+    this._adress,
     this._contate,
   );
   String get id {
@@ -26,6 +30,10 @@ class Children {
 
   String get responsible {
     return _responsible;
+  }
+
+  String get adress {
+    return _adress;
   }
 
   String get contate {
@@ -46,6 +54,10 @@ class Children {
 
   set responsible(String responsible) {
     _responsible = responsible;
+  }
+
+  set adress(String adress) {
+    _adress = adress;
   }
 
   set contate(String contate) {
