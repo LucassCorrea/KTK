@@ -10,7 +10,7 @@ class ButtomBack extends StatelessWidget {
     return Row(
       children: [
         SizedBox(
-          width: mediaQuery.size.width * .02,
+          width: mediaQuery.size.width * .03,
         ),
         Align(
           alignment: Alignment.centerLeft,
