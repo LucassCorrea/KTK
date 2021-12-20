@@ -83,7 +83,7 @@ class _TesteTransfState extends State<TesteTransf> {
                 SizedBox(
                   width: mediaQuery.size.width * .46,
                   child: Text(
-                    'Andar para trás ao longo de uma trave de equilíbrio de largura decrescente de 6,0, 4,5 e 3,0 cm',
+                    'Trocar de pranchas lateralmente o maior número vezes possíveis em 20 segundos',
                     textAlign: TextAlign.center,
                     style: TextStyle(
                       color: const Color(0xFF084769),
